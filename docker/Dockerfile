@@ -9,7 +9,7 @@ RUN make build
 FROM busybox:stable as run
 WORKDIR /app/
 COPY --from=build /etc/passwd /etc/passwd
-COPY --from=build /app/bin/main /app/.env ./
+COPY --from=build /app/bin/main .
 USER nonroot
 EXPOSE 9010
 CMD [ "./main" ]
