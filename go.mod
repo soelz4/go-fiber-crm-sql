@@ -1,6 +1,6 @@
 module go-fiber-crm-sql
 
-go 1.22.4
+go 1.22.3
 
 require github.com/gofiber/fiber/v3 v3.0.0-beta.3
 
